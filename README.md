@@ -1,2 +1,5 @@
 # FYPC-site
- This site is designed for PC & related electronics Shop And Repair Service
+
+This site is designed for PC & related electronics Shop And Repair Service.
+
+Currently In Development

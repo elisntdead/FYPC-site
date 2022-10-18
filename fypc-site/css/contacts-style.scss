@@ -1,0 +1,27 @@
+@import "mutual.scss";
+body {
+  .container {
+    .contacts {
+      h1 {
+        text-align: center;
+      }
+      line-height: 23px;
+      .contacts-title {
+        margin: 10px 0 10px 0;
+        font-size: 1.5em;
+      }
+      .contacts-email {
+        margin-top: 20px;
+        & a {
+          text-decoration: none;
+          color: #f4f4f4;
+        }
+      }
+      .map-location {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+      }
+    }
+  }
+}
