@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/711ce7038c.js  "
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="fonts/Gilroy Light/style.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="fonts/Gilroy/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/admin-boostrap.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FYPC | Admin - Clients</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-info" href="#">
+          <img
+            src="/images/fypc_logo.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block rounded-5 me-2"
+          />
+          ADMIN
+        </a>
+      </div>
+    </nav>
+    <section class="container rounded my-5 bg-dark p-2">
+      <ul class="nav nav-pills justify-content-between">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Workers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bundles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Work</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Others</a
+          >
+          <ul class="dropdown-menu dropdown-menu-primary bg-dark border py-0">
+            <li>
+              <a class="dropdown-item rounded-top" href="#">Home Page Banner</a>
+            </li>
+            <li>
+              <a class="dropdown-item rounded-bottom" href="#">Roles</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="container rounded my-5 bg-dark p-2">
+      <div class="search-form">
+        <div class="form-title">
+          <h2 class="text-info h4 mb-2 text-center">Filter</h2>
+        </div>
+        <div class="form-fields">
+          <div class="row mb-3">
+            <div class="col-3">
+              <input
+                type="text"
+                autocomplete="off"
+                class="form-control form-control-sm text-info"
+                id="name-input"
+                placeholder="Enter Client's ID"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="text"
+                autocomplete="off"
+                class="form-control form-control-sm text-info"
+                id="name-input"
+                placeholder="Enter Client's Address"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="phone"
+                autocomplete="off"
+                class="form-control form-control-sm text-info"
+                id="name-input"
+                placeholder="Enter Client's Phone"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="email"
+                autocomplete="off"
+                class="form-control form-control-sm text-info"
+                id="name-input"
+                placeholder="Enter Client's Email"
+              />
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-3">
+              <input
+                type="text"
+                autocomplete="off"
+                class="form-control form-control-sm text-info"
+                id="name-input"
+                placeholder="Enter Client's Name"
+              />
+            </div>
+            <div class="col-3"></div>
+            <div class="col-3 d-grid">
+              <button type="button" class="btn btn-primary text-info p-0">
+                Apply Filter
+              </button>
+            </div>
+            <div class="col-3 d-grid">
+              <button type="button" class="btn btn-danger p-0">
+                Reset Filter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container rounded my-5 bg-dark p-2">
+      <h2 class="h4 text-info text-center">Clients</h2>
+      <table class="table table-dark table-hover table-responsive">
+        <thead>
+          <tr>
+            <th scope="col">
+              ID <i class="fa-solid fa-arrow-up-short-wide"></i>
+            </th>
+            <th scope="col">
+              Name <i class="fa-solid fa-arrow-up-short-wide"></i>
+            </th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Address</th>
+            <th scope="col">
+              Email <i class="fa-solid fa-arrow-up-short-wide"></i>
+            </th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>79236319309</td>
+            <td>640 Charles Street</td>
+            <td>naezhda9@yandex.ru</td>
+            <td>
+              <button type="button" class="btn btn-primary text-info py-1">
+                Details
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>79236319309</td>
+            <td>2329 Whispering Pines Circle</td>
+            <td>vladislav.zimin@ya.ru</td>
+            <td>
+              <button type="button" class="btn btn-primary text-info py-1">
+                Details
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Helen</td>
+            <td>79236319309</td>
+            <td>1319 Walnut Avenue</td>
+            <td>matvei5@mail.ru</td>
+            <td>
+              <button type="button" class="btn btn-primary text-info py-1">
+                Details
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!---->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

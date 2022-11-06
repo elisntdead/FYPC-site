@@ -1,0 +1,21 @@
+/* $text-color: #f4f4f4;
+$card-color: #302f2f;
+$link-color: #d64c1f;
+$bg-color: #1b1a1a;
+$primary: #d64c1f; */
+$dark: #302f2f;
+$secondary: #d64c1f;
+$primary: #d64c1f;
+$cyan: #f4f4f4;
+$dropdown-link-color: #f4f4f4;
+$dropdown-link-hover-color: #f4f4f4;
+$dropdown-link-hover-bg: #d64c1f;
+$nav-link-hover-color: #f4f4f4;
+$input-bg: #1b1a1a;
+$input-border-color: #302f2f;
+$input-focus-border-color: #d64c1f;
+$input-focus-box-shadow: white;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+body {
+  background-color: #1b1a1a !important;
+}
