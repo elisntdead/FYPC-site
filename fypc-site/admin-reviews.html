@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="fonts/Gilroy/style.css" type="text/css" />
     <link rel="stylesheet" href="css/admin-boostrap.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FYPC | Admin - Clients</title>
+    <title>FYPC | Admin - Reviews</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-5">
@@ -42,10 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/admin-clients.html"
+              <a class="nav-link" aria-current="page" href="/admin-clients.html"
                 >Clients</a
               >
             </li>
@@ -56,7 +53,7 @@
               <a class="nav-link" href="/admin-orders.html">Orders</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/admin-reviews.html">Reviews</a>
+              <a class="nav-link active" href="/admin-reviews.html">Reviews</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/admin-products.html">Products</a>
@@ -84,21 +81,8 @@
         <div class="form-fields">
           <div class="row mb-3">
             <div class="col-2">
-              <label for="exampleFormControlInput1" class="form-label"
-                >ID</label
-              >
-              <input
-                type="text"
-                autocomplete="off"
-                class="form-control text-info"
-                id="name-input"
-              />
-            </div>
-            <div class="col-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Delivery Address</label
-              >
-              <input
+              <label for="exampleFormControlInput1" class="form-label">ID</label
+              ><input
                 type="text"
                 autocomplete="off"
                 class="form-control text-info"
@@ -107,49 +91,47 @@
             </div>
             <div class="col-2">
               <label for="exampleFormControlInput1" class="form-label"
-                >Phone</label
+                >Add Date</label
               >
               <input
-                type="text"
-                autocomplete="off"
-                class="form-control text-info"
-                id="name-input"
-              />
-            </div>
-            <div class="col-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email</label
-              >
-              <input
-                type="text"
-                autocomplete="off"
-                class="form-control text-info"
-                id="name-input"
+                class="form-control"
+                type="date"
+                id="start"
+                name="trip-start"
               />
             </div>
             <div class="col-2">
               <label for="exampleFormControlInput1" class="form-label"
-                >Name</label
+                >Accept Date</label
               >
               <input
-                type="text"
-                autocomplete="off"
-                class="form-control text-info"
-                id="name-input"
+                class="form-control"
+                type="date"
+                id="start"
+                name="trip-start"
               />
             </div>
-          </div>
-          <div class="row mb-2">
-            <div class="col-4"></div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2 d-grid">
-              <button type="button" class="btn btn-danger p-0">
+            <div class="col-2">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Status</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">None</option>
+                <option value="2">Accepted</option>
+                <option value="3">Not Accepted</option>
+              </select>
+            </div>
+            <div
+              class="col-2 d-flex align-items-center justify-content-center mt-4"
+            >
+              <button type="button" class="btn btn-danger px-5">
                 Reset Filter
               </button>
             </div>
-            <div class="col-2 d-grid">
-              <button type="button" class="btn btn-primary text-info p-0">
+            <div
+              class="col-2 d-flex align-items-center justify-content-center mt-4"
+            >
+              <button type="button" class="btn btn-primary px-5">
                 Apply Filter
               </button>
             </div>
@@ -158,11 +140,6 @@
       </div>
     </section>
     <section class="container rounded my-5 bg-dark p-2">
-      <div class="table-add-new d-grid">
-        <button type="button" class="btn btn-success text-info py-1">
-          Add New Client
-        </button>
-      </div>
       <table class="table table-dark table-hover table-responsive">
         <thead>
           <tr>
@@ -170,14 +147,19 @@
               ID <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
             </th>
             <th scope="col">
-              Name
-              <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
+              Added<a href="#"
+                ><i class="fa-solid fa-arrow-up-short-wide"></i
+              ></a>
             </th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Address</th>
             <th scope="col">
-              Email
-              <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
+              Accepted<a href="#"
+                ><i class="fa-solid fa-arrow-up-short-wide"></i
+              ></a>
+            </th>
+            <th scope="col">
+              Status<a href="#"
+                ><i class="fa-solid fa-arrow-up-short-wide"></i
+              ></a>
             </th>
             <th scope="col">Actions</th>
           </tr>
@@ -185,44 +167,35 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>79236319309</td>
-            <td>640 Charles Street</td>
-            <td>naezhda9@yandex.ru</td>
+            <td>22.02.2022</td>
+            <td>23.02.2022</td>
+            <td>Accepted</td>
             <td>
-              <a href="/admin-client.html"
-                ><button type="button" class="btn btn-primary text-info py-1">
-                  Details
-                </button></a
-              >
+              <button type="button" class="btn btn-primary text-info py-1">
+                Details
+              </button>
             </td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>79236319309</td>
-            <td>2329 Whispering Pines Circle</td>
-            <td>vladislav.zimin@ya.ru</td>
+            <td>25.02.2022</td>
+            <td>None</td>
+            <td>Accepted</td>
             <td>
-              <a href="/admin-client.html"
-                ><button type="button" class="btn btn-primary text-info py-1">
-                  Details
-                </button></a
-              >
+              <button type="button" class="btn btn-primary text-info py-1">
+                Details
+              </button>
             </td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Helen</td>
-            <td>79236319309</td>
-            <td>1319 Walnut Avenue</td>
-            <td>matvei5@mail.ru</td>
+            <td>21.02.2022</td>
+            <td>26.02.2022</td>
+            <td>Accepted</td>
             <td>
-              <a href="/admin-client.html"
-                ><button type="button" class="btn btn-primary text-info py-1">
-                  Details
-                </button></a
-              >
+              <button type="button" class="btn btn-primary text-info py-1">
+                Details
+              </button>
             </td>
           </tr>
         </tbody>

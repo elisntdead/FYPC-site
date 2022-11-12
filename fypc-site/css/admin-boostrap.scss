@@ -1,21 +1,27 @@
-/* $text-color: #f4f4f4;
-$card-color: #302f2f;
-$link-color: #d64c1f;
-$bg-color: #1b1a1a;
-$primary: #d64c1f; */
 $dark: #302f2f;
 $secondary: #d64c1f;
 $primary: #d64c1f;
 $cyan: #f4f4f4;
-$dropdown-link-color: #f4f4f4;
-$dropdown-link-hover-color: #f4f4f4;
-$dropdown-link-hover-bg: #d64c1f;
-$nav-link-hover-color: #f4f4f4;
+$gray-900: grey;
+$gray-200: #1b1a1a98;
+$navbar-dark-color: $cyan;
+$navbar-dark-hover-color: $primary;
+$form-label-color: #f4f4f4;
 $input-bg: #1b1a1a;
 $input-border-color: #302f2f;
 $input-focus-border-color: #d64c1f;
+$navbar-dark-active-color: #d64c1f;
 $input-focus-box-shadow: white;
+$pagination-bg: $dark;
+$pagination-disabled-bg: $dark;
+$pagination-border-color: #1b1a1a;
+$pagination-disabled-border-color: #1b1a1a;
+$pagination-color: #f4f4f4;
+$pagination-hover-bg: #f4f4f4;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 body {
   background-color: #1b1a1a !important;
+}
+i {
+  padding-left: 3px;
 }
