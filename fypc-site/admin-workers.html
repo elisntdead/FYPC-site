@@ -23,8 +23,8 @@
           <img
             src="/images/fypc_logo.png"
             alt="Logo"
-            width="50"
-            height="50"
+            width="60"
+            height="60"
             class="d-inline-block rounded-5 me-2"
           />
         </a>
@@ -39,7 +39,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-lg-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/admin-clients.html"
@@ -62,184 +65,315 @@
               <a class="nav-link" href="/admin-bundles.html">Bundles</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="admin-worker-cabinet.html">My Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/admin-home-banner.html"
-                >Home Page Banner</a
-              >
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="/admin-roles.html">Roles</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Others
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="admin-worker-cabinet.html"
+                    >My Work</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/admin-home-settings.html"
+                    >Home Page Settings</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/admin-tags.html">Tags</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"
+                ><i class="fa-solid fa-right-from-bracket fa-lg me-1"></i
+                ><span>Dmitry</span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <section class="container rounded my-5 bg-dark p-2">
-      <div class="search-form">
-        <div class="form-fields">
-          <div class="row mb-3">
-            <div class="col-2">
-              <label for="exampleFormControlInput1" class="form-label"
-                >ID</label
-              >
+    <section class="container">
+      <div class="shadow-lg my-4 p-3 rounded">
+        <div class="row row-cols-2 row-cols-md-2 row-cols-xl-4">
+          <div class="col">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="Addon-Name">Name</span>
               <input
                 type="text"
-                autocomplete="off"
-                class="form-control form-control-sm text-info"
-                id="name-input"
-              />
-            </div>
-            <div class="col-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Name</label
-              >
-              <input
-                type="text"
-                autocomplete="off"
-                class="form-control form-control-sm text-info"
-                id="name-input"
-              />
-            </div>
-            <div class="col-2">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Phone</label
-              >
-              <input
-                type="text"
-                autocomplete="off"
-                class="form-control form-control-sm text-info"
-                id="name-input"
-              />
-            </div>
-            <div class="col-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email</label
-              >
-              <input
-                type="text"
-                autocomplete="off"
-                class="form-control form-control-sm text-info"
-                id="name-input"
-              />
-            </div>
-            <div class="col-2">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Position</label
-              >
-              <input
-                type="text"
-                autocomplete="off"
-                class="form-control form-control-sm text-info"
-                id="name-input"
+                class="form-control"
+                aria-label="Name"
+                aria-describedby="basic-addon1"
               />
             </div>
           </div>
-          <div class="row mb-2">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-2 d-grid">
-              <button type="button" class="btn btn-danger p-0">
-                Reset Filter
-              </button>
+          <div class="col">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="Addon-Name">Role</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Role"
+                aria-describedby="basic-addon1"
+              />
             </div>
-            <div class="col-2 d-grid">
-              <button type="button" class="btn btn-primary text-info p-0">
-                Apply Filter
-              </button>
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="Addon-Name">Email</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Email"
+                aria-describedby="basic-addon1"
+              />
             </div>
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="Addon-Name">Phone Number</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Phone Number"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-7 col-xl-4">
+            <label for="date-from">Date Added</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="Addon-Name">From</span>
+              <input
+                type="date"
+                id="date-from"
+                class="form-control"
+                aria-label="Date Added From"
+                aria-describedby="basic-addon1"
+              /><span class="input-group-text" id="Addon-Name">To</span
+              ><input
+                type="date"
+                id="date-to"
+                class="form-control"
+                aria-label="Date Added To"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+          <div class="col-4 col-md-10 col-lg-1 col-xl-4"></div>
+          <div class="col-md-6 col-lg-2">
+            <a href="#"
+              ><button
+                type="button"
+                class="btn btn-danger w-100 fw-bold mt-md-0 mt-lg-4"
+              >
+                Reset
+              </button></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-2 mt-1 mt-md-0">
+            <a href="#"
+              ><button
+                type="button"
+                class="btn btn-success w-100 fw-bold mt-md-0 mt-lg-4"
+              >
+                Apply
+              </button></a
+            >
           </div>
         </div>
       </div>
     </section>
-    <section class="container rounded my-5 bg-dark p-2">
-      <h2 class="h4 text-info text-center">Workers</h2>
-      <div class="table-add-new d-grid">
-        <button type="button" class="btn btn-success text-info py-1">
-          Add New Worker
+    <section class="container">
+      <div class="shadow-lg my-4 p-3 rounded">
+        <button type="button" class="btn btn-primary col-12 fw-bold">
+          Create New Worker
         </button>
+        <div class="table-responsive">
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th scope="col">
+                  <span class="sort-link"
+                    ><a href="#" class="text-dark"
+                      >ID<i class="fa-solid fa-arrow-up-short-wide"></i></a
+                  ></span>
+                </th>
+                <th scope="col">
+                  <span class="sort-link"
+                    ><a href="#" class="text-dark"
+                      >Name<i class="fa-solid fa-arrow-up-short-wide"></i></a
+                  ></span>
+                </th>
+                <th scope="col">
+                  <span class="sort-link"
+                    ><a href="#" class="text-dark"
+                      >Role<i class="fa-solid fa-arrow-up-short-wide"></i></a
+                  ></span>
+                </th>
+                <th scope="col">
+                  <span class="sort-link"
+                    ><a href="#" class="text-dark"
+                      >Email<i class="fa-solid fa-arrow-up-short-wide"></i></a
+                  ></span>
+                </th>
+                <th scope="col">
+                  <span class="sort-link"
+                    ><a href="#" class="text-dark"
+                      >Phone Number<i
+                        class="fa-solid fa-arrow-up-short-wide"
+                      ></i></a
+                  ></span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">1</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">Denis</a>
+                </td>
+                <td>Courier</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79239832275</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">2</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">Helen</a>
+                </td>
+                <td>Manager</td>
+                <td>gjhsdkjs@tempmail.com</td>
+                <td>79922119376</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">3</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">John</a>
+                </td>
+                <td>Admin</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79222121212</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">3</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">John</a>
+                </td>
+                <td>Admin</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79222121212</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">3</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">John</a>
+                </td>
+                <td>Admin</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79222121212</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">3</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">John</a>
+                </td>
+                <td>Admin</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79222121212</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">3</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">John</a>
+                </td>
+                <td>Admin</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79222121212</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">3</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">John</a>
+                </td>
+                <td>Admin</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79222121212</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">3</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">John</a>
+                </td>
+                <td>Admin</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79222121212</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a href="/admin-worker.html" class="text-dark">3</a>
+                </th>
+                <td>
+                  <a href="/admin-worker.html" class="text-dark">John</a>
+                </td>
+                <td>Admin</td>
+                <td>deniska-sosiska@tempmail.com</td>
+                <td>79222121212</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <nav aria-label="Table Page Changer">
+          <ul class="pagination justify-content-center mb-0">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <table class="table table-dark table-hover table-responsive">
-        <thead>
-          <tr>
-            <th scope="col">
-              ID <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
-            </th>
-            <th scope="col">
-              Name
-              <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
-            </th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Email</th>
-            <th scope="col">
-              Position<a href="#"
-                ><i class="fa-solid fa-arrow-up-short-wide"></i
-              ></a>
-            </th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>79236319309</td>
-            <td>dfkjsdhajfk@mail.ru</td>
-            <td>Cleaning specialist</td>
-            <td>
-              <button type="button" class="btn btn-primary text-info py-1">
-                Details
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>79236319309</td>
-            <td>l;gkjsoijg45235@ya.ru</td>
-            <td>Courier</td>
-            <td>
-              <button type="button" class="btn btn-primary text-info py-1">
-                Details
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Helen</td>
-            <td>79236319309</td>
-            <td>dsfgkjdisff@gmail.com</td>
-            <td>Sales Manager</td>
-            <td>
-              <button type="button" class="btn btn-primary text-info py-1">
-                Details
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            <a class="fw-bold page-link">Previous</a>
-          </li>
-          <li class="page-item active">
-            <a class="fw-bold page-link" href="#">1</a>
-          </li>
-          <li class="page-item"><a class="fw-bold page-link" href="#">2</a></li>
-          <li class="page-item"><a class="fw-bold page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="fw-bold page-link" href="#">...</a>
-          </li>
-          <li class="page-item"><a class="fw-bold page-link" href="#">7</a></li>
-          <li class="page-item"><a class="fw-bold page-link" href="#">8</a></li>
-          <li class="page-item">
-            <a class="fw-bold page-link" href="#">Next</a>
-          </li>
-        </ul>
-      </nav>
     </section>
     <!---->
     <script

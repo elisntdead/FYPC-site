@@ -30,12 +30,12 @@
           </div>
           <nav class="header-menu">
             <ul class="header-list">
-              <li><a href="/">Home</a></li>
-              <li><a href="/catalog.html">Catalog</a></li>
-              <li><a href="/contacts.html">Contacts</a></li>
-              <li><a href="/feedback.html">Feedback</a></li>
-              <li><a href="/cart.html">Cart</a></li>
-              <li><a href="/login.html">My Account</a></li>
+              <a href="/"><li>Home</li> </a>
+              <a href="/catalog.html"><li>Catalog</li></a>
+              <a href="/contacts.html"><li>Contacts</li></a>
+              <a href="/feedback.html"><li>Feedback</li></a>
+              <a href="/cart.html"><li>Cart</li></a>
+              <a href="/login.html"><li>My Account</li></a>
             </ul>
           </nav>
         </div>
@@ -70,6 +70,57 @@
           </div>
           <div class="catalog-filter">
             <a href="#"><i class="fa-solid fa-filter fa-2xl"></i></a>
+            <div class="filter-fields">
+              <div class="field-group">
+                <ul>
+                  <li>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Enter Product's Name"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name="keyword"
+                      placeholder="Enter Keyword"
+                    />
+                  </li>
+                  <li>
+                    <select name="Catagory">
+                      <option selected>Pick Category</option>
+                      <option>PC</option>
+                      <option>Laptop</option>
+                      <option>Maintenance</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name="Catagory">
+                      <option selected>Pick Subcategory</option>
+                      <option>PC</option>
+                      <option>Laptop</option>
+                      <option>Maintenance</option>
+                      <option>Keyboard</option>
+                    </select>
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name="keyword"
+                      placeholder="Enter Starting Price"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      name="keyword"
+                      placeholder="Enter Heighest Price"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="catalog-cards">
             <div class="catalog-card">
@@ -328,5 +379,9 @@
         </div>
       </div>
     </footer>
+    <!-- -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/filter-popup.js"></script>
   </body>
 </html>

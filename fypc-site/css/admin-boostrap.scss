@@ -1,27 +1,33 @@
-$dark: #302f2f;
-$secondary: #d64c1f;
-$primary: #d64c1f;
-$cyan: #f4f4f4;
-$gray-900: grey;
-$gray-200: #1b1a1a98;
-$navbar-dark-color: $cyan;
-$navbar-dark-hover-color: $primary;
-$form-label-color: #f4f4f4;
-$input-bg: #1b1a1a;
-$input-border-color: #302f2f;
-$input-focus-border-color: #d64c1f;
-$navbar-dark-active-color: #d64c1f;
-$input-focus-box-shadow: white;
-$pagination-bg: $dark;
-$pagination-disabled-bg: $dark;
-$pagination-border-color: #1b1a1a;
-$pagination-disabled-border-color: #1b1a1a;
-$pagination-color: #f4f4f4;
-$pagination-hover-bg: #f4f4f4;
+$orange: #d64c1f;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-body {
-  background-color: #1b1a1a !important;
-}
 i {
   padding-left: 3px;
+}
+.buttons,
+.review-image {
+  a {
+    transition: filter 0.15s ease-in-out;
+    &:hover {
+      filter: brightness(80%);
+      transition: filter 0.15s ease-in-out;
+    }
+  }
+}
+.sort-link,
+th,
+td {
+  a {
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+    &:hover {
+      color: $orange !important;
+      transition: color 0.15s ease-in-out;
+    }
+  }
+}
+.cal-view {
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
 }
